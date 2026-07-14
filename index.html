@@ -89,14 +89,58 @@
       <div class="container narrow">
         <p class="eyebrow">Representative questions</p>
         <h2>Questions worth an experienced technical read</h2>
-        <ul class="question-list">
-          <li>What public signals indicate recovery or weakness in hyperscale nearline HDD demand?</li>
-          <li>How should HAMR timing, qualification risk, and supplier roadmap claims be interpreted?</li>
-          <li>Where is flash plausibly substituting for HDD, and where is that claim overstated?</li>
-          <li>How does AI infrastructure affect storage demand beyond GPUs and local NVMe?</li>
-          <li>What can and cannot be concluded from cloud-provider storage-tier documentation?</li>
-          <li>How do HDD suppliers differ in roadmap, qualification, and customer exposure?</li>
-        </ul>
+        <p class="section-intro question-intro">Open a question for a short view of the factors I would examine.</p>
+
+        <div class="question-list">
+          <details>
+            <summary>What public signals indicate recovery or weakness in hyperscale nearline HDD demand?</summary>
+            <div class="question-answer">
+              <p>There is no single public metric that tells you whether hyperscale nearline HDD demand is strengthening or weakening. Useful evidence may come from supplier commentary, exabyte shipments, cloud capital spending, qualification activity, inventory language, and changes in cloud storage offerings. The challenge is deciding which signals matter most, which ones are lagging indicators, and what the available evidence supports.</p>
+            </div>
+          </details>
+
+          <details>
+            <summary>How should HAMR timing, qualification risk, and supplier roadmap claims be interpreted?</summary>
+            <div class="question-answer">
+              <p>Roadmaps describe technical intent, not customer deployment. The more useful questions are which customers are qualifying the technology, what risks remain, how deployment is being staged, and whether the surrounding systems are ready to support it. Qualification timing, manufacturing readiness, platform integration, and customer adoption can matter as much as the announced capacity point.</p>
+            </div>
+          </details>
+
+          <details>
+            <summary>Where is flash plausibly substituting for HDD, and where is that claim overstated?</summary>
+            <div class="question-answer">
+              <p>Flash continues to move into higher-capacity workloads, but cost, data retention requirements, access patterns, and system architecture still favor HDD for much of cloud object and archive storage. The central questions are where the crossover is moving, which workloads are likely to shift first, and how quickly those changes will occur.</p>
+            </div>
+          </details>
+
+          <details>
+            <summary>How does AI infrastructure affect storage demand beyond GPUs and local NVMe?</summary>
+            <div class="question-answer">
+              <p>GPUs dominate the headlines, but AI infrastructure also creates large training datasets, checkpoints, model artifacts, backups, and data that may remain in object storage for extended periods. Understanding which of those data sets are kept over time, how often they are accessed, and what that implies for storage tiering at scale is essential to evaluating AI’s broader storage impact.</p>
+            </div>
+          </details>
+
+          <details>
+            <summary>What does cloud-provider storage-tier documentation reveal—and what does it leave uncertain?</summary>
+            <div class="question-answer">
+              <p>Cloud-provider storage-tier documentation defines important service characteristics such as latency, access frequency, durability targets, retrieval behavior, and pricing structure. It rarely discloses the underlying media, device mix, or internal data layout. The challenge is distinguishing what the service specification establishes from what remains an inference about implementation.</p>
+            </div>
+          </details>
+
+          <details>
+            <summary>How do HDD suppliers differ in roadmap, qualification, and customer exposure?</summary>
+            <div class="question-answer">
+              <p>Public roadmaps show direction, but suppliers also differ in technology maturity, qualification progress, manufacturing readiness, customer concentration, and the workloads they are positioned to serve. The meaningful comparison is not who announces the highest capacity point, but who can qualify, manufacture, and deploy the product at scale with its target customers.</p>
+            </div>
+          </details>
+
+          <details>
+            <summary>Which emerging storage technologies deserve close attention?</summary>
+            <div class="question-answer">
+              <p>New storage technologies are often announced years before they see meaningful deployment. The important questions are whether they solve a clear customer problem, integrate into surrounding systems, scale operationally, and improve the economics or reliability of storing data. Some represent durable changes in architecture; others are technologies still searching for the right workload.</p>
+            </div>
+          </details>
+        </div>
       </div>
     </section>
 
